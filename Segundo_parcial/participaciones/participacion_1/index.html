@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad CSS - Estructura Semántica</title>
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Nombre del Sitio</h1>
+    <p>Subtítulo o descripción breve del sitio</p>
+
+    <nav aria-label="Navegación principal">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="seccion" id="inicio" aria-labelledby="titulo-inicio">
+      <h2 id="titulo-inicio">Sección principal</h2>
+      <div class="carta">
+        <p>
+          Este bloque puede funcionar como hero o introducción.
+        </p>
+        <figure>
+          <img src="assets/img/hero-principal.png" alt="Imagen principal de ejemplo para la actividad" width="500" height="340">
+          <figcaption>Imagen de portada del sitio.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="servicios" id="servicios" aria-labelledby="titulo-servicios">
+      <h2 id="titulo-servicios">Servicios</h2>
+      <div class="carta">
+        <article>
+          <h3>Servicio 1</h3>
+          <p>Descripción breve del servicio 1.</p>
+        </article>
+      </div>
+      <div class="carta">
+        <article>
+          <h3>Servicio 2</h3>
+          <p>Descripción breve del servicio 2.</p>
+        </article>
+      </div>
+      <div class="carta">
+        <article>
+          <h3>Servicio 3</h3>
+          <p>Descripción breve del servicio 3.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="blog" class="articulos" aria-labelledby="titulo-blog">
+      <h2 id="titulo-blog">Últimos artículos</h2>
+
+      <article >
+        <header>
+          <h3>Título del artículo</h3>
+          <p>
+            <time datetime="2026-06-22">22 de junio de 2026</time>
+          </p>
+          <p>
+          Resumen del contenido del artículo.
+        </p>
+        </header>
+        <footer>
+          <a href="#">Leer más</a>
+        </footer>
+      </article>
+    </section>
+
+    <aside aria-labelledby="titulo-aside">
+      <h2 id="titulo-aside">Información adicional</h2>
+      <p>
+        Espacio para enlaces secundarios, anuncios o recursos.
+      </p>
+    </aside>
+
+    <section class="contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Envíanos un mensaje</legend>
+
+          <p>
+            <label for="nombre">Nombre</label><br>
+            <input id="nombre" name="nombre" type="text" required>
+          </p>
+
+          <p>
+            <label for="correo">Correo electrónico</label><br>
+            <input id="correo" name="correo" type="email" required>
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </p>
+
+          <button type="submit">Enviar</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nombre del Sitio</p>
+    <address>
+      Calle Ejemplo 123, Ciudad, País
+    </address>
+  </footer>
+</body>
+</html>
