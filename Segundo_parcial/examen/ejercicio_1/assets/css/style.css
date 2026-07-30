@@ -1,0 +1,55 @@
+:root {
+--color-primario: #fdfdfd;
+--color-secundario: #0023a2a2;
+--color-fondo: #d4f4ff;
+--color-texto: #000000;
+--base-font-size: 1rem;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-size: var(--base-font-size);
+}
+
+.grid-directorio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .grid-directorio {
+        grid-template-columns: 1fr;
+    }
+    /*se utilizo para que los elementos se muestren en una sola columna en dispositivos moviles */
+}
+
+@media (min-width: 769px) {
+    .grid-directorio {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    /*se utilizo para que los elementos se muestren en dos columnas en dispositivos medianos */
+}
+
+@media (min-width: 1200px) {
+    .grid-directorio {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    /*se utilizo para que los elementos se muestren en cuatro columnas en dispositivos grandes */
+}
