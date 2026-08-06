@@ -1,0 +1,141 @@
+:root {
+    --bs-primary: #6b40d9;
+    --bs-primary-rgb: 107, 64, 217;
+    --primary-soft: #8e67f4;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(165deg, #f6f3ff 0%, #ffffff 35%, #fafbff 100%);
+    min-height: 100vh;
+}
+
+.site-shell {
+    width: min(100%, 980px);
+}
+
+.shadow-soft {
+    box-shadow: 0 10px 24px rgba(45, 36, 90, 0.08);
+}
+
+.brand-initial {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-soft), var(--bs-primary));
+}
+
+.navbar .nav-link {
+    color: #3b3f51;
+    letter-spacing: 0.04em;
+}
+
+.navbar .nav-link.active {
+    border-bottom: 3px solid var(--primary-soft);
+}
+
+.hero {
+    min-height: 320px;
+    background:
+        radial-gradient(circle at 95% 20%, rgba(117, 85, 235, 0.18) 0 2px, transparent 3px),
+        radial-gradient(120% 90% at 76% 110%, rgba(117, 85, 235, 0.1) 10%, rgba(117, 85, 235, 0) 55%),
+        linear-gradient(180deg, #f6f2ff 0%, #ffffff 75%);
+    background-size: 12px 12px, auto, auto;
+    background-position: calc(100% - 42px) 66px, center, center;
+}
+
+.btn-brand {
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(145deg, var(--primary-soft), var(--bs-primary));
+    box-shadow: 0 8px 18px rgba(102, 69, 218, 0.3);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    color: #fff;
+    background: linear-gradient(145deg, #7f58ee, #5e36cf);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d9dce8;
+}
+
+.dot.active {
+    background: var(--bs-primary);
+}
+
+.line {
+    width: 76px;
+    height: 2px;
+    background: #e6e8f0;
+}
+
+.title-underline {
+    width: 76px;
+    height: 4px;
+    border-radius: 999px;
+    background: linear-gradient(145deg, var(--primary-soft), var(--bs-primary));
+}
+
+.skill-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--bs-primary);
+    border: 1px solid #ebddff;
+    background: #f7f2ff;
+}
+
+.progress {
+    height: 10px;
+    background: #ecedf4;
+}
+
+.progress-brand {
+    background: linear-gradient(145deg, var(--primary-soft), var(--bs-primary));
+}
+
+.about-avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(circle at 35% 25%, #f7f8ff 0%, #eceef6 70%, #e5e8f2 100%);
+    color: #a5acbf;
+    font-size: 4rem;
+}
+
+.about-text {
+    max-width: 540px;
+}
+
+.edu-card {
+    background: linear-gradient(130deg, #f8f3ff 0%, #f7f7ff 100%);
+    border: 1px solid #ede7ff;
+}
+
+.edu-icon {
+    color: var(--bs-primary);
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        min-height: 420px;
+    }
+}
