@@ -9,7 +9,6 @@ body {
     background: linear-gradient(165deg, #f6f3ff 0%, #ffffff 35%, #fafbff 100%);
     min-height: 100vh;
 }
-/* Personal image in About section */
 .about-img {
     width: 100%;
     height: auto;
@@ -154,7 +153,6 @@ body {
     }
 }
 
-/* Contact page styles */
 .contact-card {
     border: 1px solid #efeafc;
 }
@@ -195,7 +193,6 @@ body {
     }
 }
 
-/* Tools / skills grid */
 .tool-card {
     background: linear-gradient(130deg, #fbf8ff 0%, #f7f7ff 100%);
     border: 1px solid #ede7ff;
@@ -224,7 +221,6 @@ body {
     }
 }
 
-/* Projects layout */
 .btn-pill {
     border-radius: 999px;
     padding: 0.45rem 1rem;
